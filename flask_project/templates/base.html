@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Library - {% block title %}Base page{% endblock %}</title>
+</head>
+<body>
+    <div>
+        <strong>Flask Library</strong>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <!--
+            C - Create
+            R - Read
+            U - Update
+            D - Delete
+        -->
+        <a href="/">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/books/list">Book's list</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#">Add book</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    </div>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
