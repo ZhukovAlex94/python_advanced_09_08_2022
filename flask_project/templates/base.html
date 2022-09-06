@@ -14,8 +14,8 @@
             D - Delete
         -->
         <a href="/">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="/books/list">Book's list</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="#">Add book</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="{{ url_for('list_books') }}">Book's list</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="{{ url_for('create_book') }}">Add book</a>&nbsp;&nbsp;|&nbsp;&nbsp;
     </div>
     <hr>
     {% block content %}{% endblock %}
