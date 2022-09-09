@@ -15,7 +15,11 @@
         -->
         <a href="/">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
         <a href="{{ url_for('list_books') }}">Book's list</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="{{ url_for('create_book') }}">Add book</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="{{ url_for('create_book') }}">Add book</a><br><br>
+        <form method="get" action="{{ url_for('search_book') }}">
+            <input placeholder="Search" name="val">
+            <button type="submit">Search</button>
+        </form>
     </div>
     <hr>
     {% block content %}{% endblock %}
